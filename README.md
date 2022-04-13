@@ -1,11 +1,15 @@
-# Nombre: prueba-python
-# Autor: Manuel Felipe Restrepo
-# Url: https://github.com/maferelo/prueba-python
+# prueba-python
 
-# PRUEBA TECNICA 1 (Tom necesita ayuda)
+### Setup:
 
->>
+> pip install -r requirements.txt
 
-# PRUEBA TECNICA 2
+#
 
->> 
+### PRUEBA TECNICA 1 (Tom necesita ayuda)
+
+> python main.py
+
+### PRUEBA TECNICA 2
+
+> python main.py
