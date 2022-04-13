@@ -4,12 +4,14 @@
 
 > pip install -r requirements.txt
 
-#
+## PRUEBA TECNICA 1 (Tom necesita ayuda)
 
-### PRUEBA TECNICA 1 (Tom necesita ayuda)
+### Ejecutar
+> python fetcher.py
 
-> python main.py
+### Tests
+> python test_fetcher.py
 
-### PRUEBA TECNICA 2
+## PRUEBA TECNICA 2
 
 > python main.py
