@@ -1,11 +1,11 @@
 import unittest
 
-from fetcher import Fetcher
+from context import usuario
 
 class TestFetcher(unittest.TestCase):
 
     def test_fetcher_is_prime(self):
-        fetcher = Fetcher()
+        fetcher = usuario.Fetcher()
         for n in (1,2,3,5,7):
             self.assertEqual(fetcher.is_prime(n), True)
         for n in (4,6,9,10):
@@ -13,7 +13,7 @@ class TestFetcher(unittest.TestCase):
         self.assertEqual(fetcher.is_prime("n"), False)
     
     def test_fetcher_get_uri(self):
-        fetcher = Fetcher()
+        fetcher = usuario.Fetcher()
         uri = 'ws://209.126.82.146:8080/'
         self.assertEqual(fetcher.get_uri(), uri)
 
