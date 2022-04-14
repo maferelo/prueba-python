@@ -45,6 +45,7 @@ class JsonStorage(Storage):
         with open(self.get_path(), "w") as outfile:
             outfile.write(json_object)
 
+# FACADE DESIGN PATTERN
 class Usuario:
     def __init__(self, storage: Storage):
         self.users = storage.load()
