@@ -1,5 +1,4 @@
 import argparse
-
 import os
 import json
 import sys
@@ -36,17 +35,18 @@ def create_parser():
                             nargs='*',
                             help='New field value e.j. -v new value')
 
+    # Lo mejor sería esperar por los inputs
     my_parser.add_argument('-c',
                             '--create',
-                            action='store',
-                            nargs='*',
+                            action='store_true',
                             help='Get id for new user')
     
     return my_parser
 
 
 def parse_args(args, my_parser):
-    users_class = usuario.Usuario()
+    storage = usuario.JsonStorage('users.json')
+    users_class = usuario.Usuario(storage)
     if args.list:
         print(users_class)
     elif args.user_id and args.update and args.value:
